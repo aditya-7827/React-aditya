@@ -6,17 +6,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   let MyObj={
-    username:"Aditya",
+    profilename:"Aditya",
     age:22,
   }
 
-  let Arr=[1,2,,30]
+  let Arr=[1,2,3]
 
   return (
     <>
       <h1 className="bg-cyan-600 text-pink-700 underline">Tailwind Test</h1>
       <Card username="mukesh"></Card>
-      <Card></Card>
+      <Card username={MyObj.profilename}></Card>
     </>
   )
 }
